@@ -1,1 +1,1 @@
-nnoremap <F5> :!ls<cr>
+nnoremap <F4> :!./Rebuild.sh<cr>
