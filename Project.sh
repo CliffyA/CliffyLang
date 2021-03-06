@@ -1,2 +1,2 @@
 #!/bin/bash
-vi -u init.vim
+vi -u VimProject/init.vim
