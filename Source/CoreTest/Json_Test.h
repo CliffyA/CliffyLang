@@ -1,5 +1,18 @@
 NB_TEST_BEGIN(Json, Load)
 {
+	FILE* pProcess;
+	char c;
+
+	pProcess = popen("clang-11 -Xclang -ast-dump=json Source/Executable/main.c", "r");
+
+	ASSERT_TRUE(pProcess);
+
+	while ((c = fgetc(pProcess)) != EOF)
+		putchar(c);
+
+	pclose(pProcess);
+
+
 	/*Uint8 nX;
 	Uint8 nY;
 	Uint8 nMineCount;
