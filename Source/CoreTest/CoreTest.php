@@ -16,7 +16,7 @@
 		{
 			return array(
 				"../Core",
-			//	"../Engine",
+				"../Engine",
 			//	"../ThirdParty",
 			);
 		}
@@ -32,7 +32,7 @@
 		{
 			$sArray = array(
 				"Core",
-			//	"Engine",
+				"Engine",
 			//	"EngineJob",
 				//"ThirdParty",
 			);

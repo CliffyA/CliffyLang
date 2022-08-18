@@ -13,7 +13,6 @@ php "CliffyC.php" "linux_gmake"
 php "CliffyC.php" "cmake"
 cd ProjectGen
 cd linux_gmake
-make config=${build} clean
 make config=${build}
 cd ..
 cd ..

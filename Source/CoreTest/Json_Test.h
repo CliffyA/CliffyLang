@@ -7,8 +7,8 @@ NB_TEST_BEGIN(Json, Load)
 
 	ASSERT_TRUE(pProcess);
 
-	while ((c = fgetc(pProcess)) != EOF)
-		putchar(c);
+	//while ((c = fgetc(pProcess)) != EOF)
+//		putchar(c);
 
 	pclose(pProcess);
 
