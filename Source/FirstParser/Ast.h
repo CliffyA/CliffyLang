@@ -15,6 +15,8 @@ typedef struct nbVector nbVector;
 typedef struct Ast Ast;
 struct Ast
 {
+	Ast* pParent;
+
 	int nLine;
 	int nColumn;
 
@@ -30,6 +32,8 @@ extern Ast* Ast_Create(nbVector* pTokenVector);
 extern void Ast_Destroy(Ast* pAst);
 
 extern void Ast_Stringify(Ast* pAst, nbString* sString, int nDepth);
+
+extern void Ast_CStringify(Ast* pAst, nbString* sString, int nDepth);
 
 #ifdef AST_SECRET
 	extern Ast* Ast_SubCreate(Ast* pParent, int nType);

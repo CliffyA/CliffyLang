@@ -214,7 +214,7 @@ int main() {
 		Ast* pAst = Ast_Create(pTokenVector);
 		nbString* sTemp = nbString_Create("");
 
-		Ast_Stringify(pAst, sTemp, 0);
+		Ast_CStringify(pAst, sTemp, 0);
 		printf("%s\n", nbString_GetCString(sTemp));
 
 		nbString_Destroy(sTemp);
